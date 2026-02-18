@@ -1,6 +1,8 @@
 pub fn get_de() -> String {
     if cfg!(target_os = "macos") {
         return "Aqua".into();
+    } else if cfg!(target_os = "windows") {
+        return "Aero".into();
     }
 
     // Linux: check env vars
@@ -17,6 +19,8 @@ pub fn get_de() -> String {
 pub fn get_wm() -> String {
     if cfg!(target_os = "macos") {
         return "Quartz Compositor".into();
+    } else if cfg!(target_os = "windows") {
+        return "DWM".into();
     }
 
     // Linux: check for known WMs in process list

@@ -55,6 +55,31 @@ pub fn get_packages() -> String {
         if count > 0 { counts.push(format!("{} (flatpak)", count)); }
     }
 
+    // Windows
+    if cfg!(target_os = "windows") {
+        // choco
+        let choco = run_cmd("choco", &["list", "-l", "-r"]);
+        if !choco.is_empty() {
+             let count = choco.lines().count();
+             if count > 0 { counts.push(format!("{} (choco)", count)); }
+        }
+
+        // scoop
+        let scoop = run_cmd("scoop", &["list"]);
+        if !scoop.is_empty() {
+             let count = scoop.lines().count().saturating_sub(4); // header lines
+             if count > 0 { counts.push(format!("{} (scoop)", count)); }
+        }
+
+        // winget
+        // winget is slow, so maybe optional? keeping it simpler for now
+        let winget = run_cmd("winget", &["list"]);
+        if !winget.is_empty() {
+             let count = winget.lines().count().saturating_sub(2);
+             if count > 0 { counts.push(format!("{} (winget)", count)); }
+        }
+    }
+
     if counts.is_empty() {
         "0".into()
     } else {

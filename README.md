@@ -38,8 +38,8 @@ Neofetch is dead. Fastfetch is great, but heavier.
 - **🎨 261+ Distro Logos**: Every single logo from Neofetch ported and embedded.
 - **� 28+ Info Fields**: Hardware, Software, Network, and more.
 - **� Single Binary**: No installation mess. Just download and run Single binary distribution. No bashpython, or awk.
-- **🖥️ Cross-Platform**: First-class support for Linux,Windows,BSD and the classic macOS.
-- **⚡ Blazing Fast: Written in Rust for maximum performance (sub-5ms runtime).
+- **🖥️ Cross-Platform**: First-class support for **Linux**, **macOS**, and **Windows**.
+- ⚡ Blazing Fast: Written in Rust for maximum performance (sub-5ms runtime).
 
 ## 📦 Installation
 

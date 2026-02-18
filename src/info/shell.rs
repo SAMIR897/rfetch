@@ -1,6 +1,13 @@
 use std::process::Command;
 
 pub fn get_shell() -> String {
+    if cfg!(target_os = "windows") {
+        // Windows doesn't usually use SHELL env var
+        return std::env::var("ComSpec")
+            .map(|p| p.split('\\').last().unwrap_or("cmd.exe").to_string())
+            .unwrap_or("cmd".into());
+    }
+
     let shell_path = std::env::var("SHELL").unwrap_or("/bin/sh".into());
     let shell_name = shell_path.split('/').last().unwrap_or("sh");
 

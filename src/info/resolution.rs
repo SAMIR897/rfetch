@@ -10,6 +10,16 @@ pub fn get_resolution() -> String {
                 return trimmed.split(':').nth(1).unwrap_or("").trim().to_string();
             }
         }
+    } else if cfg!(target_os = "windows") {
+        let h = run_cmd("wmic", &["path", "Win32_VideoController", "get", "CurrentHorizontalResolution"]);
+        let v = run_cmd("wmic", &["path", "Win32_VideoController", "get", "CurrentVerticalResolution"]);
+        
+        let h_val = h.lines().nth(1).unwrap_or("").trim();
+        let v_val = v.lines().nth(1).unwrap_or("").trim();
+        
+        if !h_val.is_empty() && !v_val.is_empty() {
+            return format!("{} x {}", h_val, v_val);
+        }
     } else {
         // Linux: try xrandr
         let output = run_cmd("xrandr", &["--current"]);

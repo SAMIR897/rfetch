@@ -12,6 +12,9 @@ pub fn get_gpu() -> String {
         }
         // Fallback: use CPU name (Apple Silicon is unified)
         run_cmd("sysctl", &["-n", "machdep.cpu.brand_string"])
+    } else if cfg!(target_os = "windows") {
+        let output = run_cmd("wmic", &["path", "win32_VideoController", "get", "name"]);
+        output.lines().nth(1).unwrap_or("Unknown").trim().to_string()
     } else {
         // Linux: try lspci
         let output = run_cmd("lspci", &[]);

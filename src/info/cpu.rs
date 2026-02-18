@@ -9,6 +9,9 @@ pub fn get_cpu() -> String {
         } else {
             "Unknown".into()
         }
+    } else if cfg!(target_os = "windows") {
+        let name = run_cmd("wmic", &["cpu", "get", "name"]);
+        name.lines().nth(1).unwrap_or("Unknown").trim().to_string()
     } else {
         // Linux: read /proc/cpuinfo
         if let Ok(content) = std::fs::read_to_string("/proc/cpuinfo") {
