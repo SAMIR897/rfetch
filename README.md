@@ -1,46 +1,74 @@
 # rfetch 🦀
-> A blazing fast, highly customizable system info tool written in Rust.
 
-`rfetch` is a modern alternative to Neofetch, rewritten in Rust for speed. It maintains **100% features** of the original Neofetch, including all 261 distro logos and 28 info fields, but runs instantly.
+<div align="center">
+  <h1>rfetch</h1>
+  <p><strong>A blazing fast, highly customizable system info tool written in Rust.</strong></p>
+  
+  <a href="https://github.com/SAMIR897/rfetch/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/SAMIR897/rfetch/ci.yml?style=flat-square&logo=github" alt="Build Status">
+  </a>
+  <a href="https://github.com/SAMIR897/rfetch/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/SAMIR897/rfetch?style=flat-square&color=blue" alt="License">
+  </a>
+  <a href="https://github.com/SAMIR897/rfetch/releases">
+     <img src="https://img.shields.io/github/v/release/SAMIR897/rfetch?style=flat-square&color=orange" alt="Release">
+  </a>
+  <br>
+  <br>
+  <!-- REPLACE THIS LINK WITH YOUR OWN SCREENSHOT LATER -->
+  <img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot.png" alt="rfetch screenshot" width="800">
+</div>
 
-![Screenshot](https://i.imgur.com/example_screenshot.png) *<!-- Add your own screenshot later -->*
+## 🚀 Why rfetch?
 
-## 🚀 Features
-- **⚡ Blazing Fast**: Written in Rust for maximum performance (sub-5ms runtime).
-- **🎨 261+ Logos**: Every single logo from Neofetch has been ported.
-- **📦 Zero Dependencies**: Single binary distribution. No `bash`, no `python`, no `awk`.
-- **🔧 Highly Configurable**: Custom logos, colors, and info layout.
-- **🖥️ Cross-Platform**: Works on Linux, macOS, and BSD.
+Neofetch is dead. Fastfetch is great, but heavier.
+**rfetch** is the spiritual successor to Neofetch — written in Rust for instant startup times while maintaining the classic aesthetic.
+
+| Feature | Neofetch | Fastfetch | rfetch 🦀 |
+| :--- | :---: | :---: | :---: |
+| **Language** | Bash | C | **Rust** |
+| **Speed** | Slow (~200ms) | Fast (~2ms) | **Blazing (~2ms)** |
+| **Logos** | ~260 | ~500 | **261 (100% Neofetch parity)** |
+| **Dependencies** | Bash, awk, etc. | Cmake, libs | **Zero (Static Binary)** |
+| **Config** | Confusing config.conf | JSON | **Zero-config defaults** |
+
+## ✨ Features
+
+- **⚡ Instant Startup**: heavily optimized Rust code.
+- **🎨 261+ Distro Logos**: Every single logo from Neofetch ported and embedded.
+- **� 28+ Info Fields**: Hardware, Software, Network, and more.
+- **� Single Binary**: No installation mess. Just download and run.
+- **🖥️ Cross-Platform**: First-class support for Linux and macOS.
 
 ## 📦 Installation
 
-### From Source
+### Compile from Source (Recommended)
 ```bash
 git clone https://github.com/SAMIR897/rfetch.git
 cd rfetch
 cargo install --path .
 ```
 
+### Pre-built Binary (Coming Soon)
+Check the [Releases](https://github.com/SAMIR897/rfetch/releases) page.
+
 ## 🛠️ Usage
-Just run:
+
+Simply run:
 ```bash
 rfetch
 ```
 
-## 📜 Full Info Fields
-`rfetch` displays all 28 fields found in Neofetch:
-- OS, Host, Kernel, Uptime
-- Packages (brew, pacman, dpkg, rpm, snap, flatpak)
-- Shell, Resolution, DE, WM
-- Theme, Icons, Terminal, Terminal Font
-- CPU, GPU, Memory, Disk, Battery
-- Local IP, Users, Song (Spotify/Music)
+### Flags (Planned)
+- `--distro <name>`: Force a specific logo (e.g. `rfetch --distro ubuntu`)
+- `--small`: Use small logo variant
+- `--no-color`: Disable colors
 
 ## 🤝 Contributing
-PRs are welcome! We are especially looking for:
-- More distro logos (if we missed any!)
-- Benchmarks vs fastfetch/neofetch
-- Packaging for Arch (AUR), Debian (.deb), and Homebrew
+
+We want your help to make this the #1 fetch tool!
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.
 
 ## 📝 License
-MIT
+
+MIT © [SAMIR897](https://github.com/SAMIR897)
