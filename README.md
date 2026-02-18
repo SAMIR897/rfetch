@@ -27,7 +27,8 @@ Neofetch is dead. Fastfetch is great, but heavier.
 | Feature | Neofetch | Fastfetch | rfetch 🦀 |
 | :--- | :---: | :---: | :---: |
 | **Language** | Bash | C | **Rust** |
-| **Speed** | Slow (~200ms) | Fast (~2ms) | **Blazing (~2ms)** |
+| **Speed** | Slow (~200ms) | Fast (~2ms) | **Blazing (~1ms)** |
+| **Size** | 100KB (+50 deps) | ~2MB (+libs) | **<1MB (Static)** |
 | **Logos** | ~260 | ~500 | **261 (100% Neofetch parity)** |
 | **Dependencies** | Bash, awk, etc. | Cmake, libs | **Zero (Static Binary)** |
 | **Config** | Confusing config.conf | JSON | **Zero-config defaults** |
@@ -36,22 +37,32 @@ Neofetch is dead. Fastfetch is great, but heavier.
 
 - **⚡ Instant Startup**: heavily optimized Rust code.
 - **🎨 261+ Distro Logos**: Every single logo from Neofetch ported and embedded.
-- **� 28+ Info Fields**: Hardware, Software, Network, and more.
-- **� Single Binary**: No installation mess. Just download and run Single binary distribution. No bashpython, or awk.
-- **🖥️ Cross-Platform**: First-class support for **Linux**, **macOS**, and **Windows**.
-- ⚡ Blazing Fast: Written in Rust for maximum performance (sub-5ms runtime).
+- **🔧 28+ Info Fields**: Hardware, Software, Network, and more.
+- **📦 Single Binary**: No installation mess. Just download and run.
+- **🖥️ Cross-Platform**: First-class support for **Linux**, **macOS**, and our old classmate **Windows**.
 
 ## 📦 Installation
 
-### Compile from Source (Recommended)
+### 🪟 Windows (Easy)
+1. Go to the [Releases Page](https://github.com/SAMIR897/rfetch/releases).
+2. Download `rfetch-windows-amd64.zip`.
+3. Extract the zip file.
+4. Run `rfetch.exe` in cmd or PowerShell.
+*(Optional: Add the folder to your PATH environment variable to run it from anywhere)*
+
+### 🍎 macOS / � Linux
+**The Easy Way (via Install Script):**
+```bash
+curl -sSf https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.sh | sh
+```
+
+**The Hard Way (Compile from Source):**
+Requires Rust to be installed.
 ```bash
 git clone https://github.com/SAMIR897/rfetch.git
 cd rfetch
 cargo install --path .
 ```
-
-### Pre-built Binary (Coming Soon)
-Check the [Releases](https://github.com/SAMIR897/rfetch/releases) page.
 
 ## 🛠️ Usage
 
