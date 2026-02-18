@@ -1,0 +1,6 @@
+# Aperio GNU/Linux
+# set_colors 255
+${c2}
+ _.._  _ ._.. _
+(_][_)(/,[  |(_)
+   |   GNU/Linux

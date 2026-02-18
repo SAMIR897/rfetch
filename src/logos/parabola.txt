@@ -1,0 +1,18 @@
+# Parabola
+# set_colors 5 7
+${c1}                          `.-.    `.
+                   `.`  `:++.   `-+o+.
+             `` `:+/. `:+/.   `-+oooo+
+        ``-::-.:+/. `:+/.   `-+oooooo+
+    `.-:///-  ..`   .-.   `-+oooooooo-
+ `..-..`                 `+ooooooooo:
+``                        :oooooooo/
+                          `ooooooo:
+                          `oooooo:
+                          -oooo+.
+                          +ooo/`
+                         -ooo-
+                        `+o/.
+                        /+-
+                       //`
+                      -.
