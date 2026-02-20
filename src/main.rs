@@ -42,6 +42,15 @@ fn render_fetch() -> usize {
     let os_name = info::os::get_os_name_raw();
     let logo_key = if os_name == "Darwin" {
         "Darwin".to_string()
+    } else if os_name == "Windows" {
+        let os_ver = sysinfo::System::os_version().unwrap_or_default();
+        if os_ver.contains("11") {
+            "Windows 11".to_string()
+        } else if os_ver.contains("10") || os_ver.contains("8") {
+            "Windows 10".to_string()
+        } else {
+            "Windows".to_string()
+        }
     } else {
         info::os::get_distro_id().unwrap_or(os_name)
     };

@@ -152,6 +152,8 @@ fn build_logo_db() -> HashMap<&'static str, (&'static str, &'static str)> {
     logo!("OpenBSD", "openbsd.txt");
     logo!("OpenBSD_small", "openbsd_small.txt");
     logo!("Windows", "windows.txt");
+    logo!("Windows 10", "windows_10.txt");
+    logo!("Windows 11", "windows_11.txt");
 
     // More distros (A-Z)
     logo!("AIX", "aix.txt");

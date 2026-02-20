@@ -1,0 +1,15 @@
+# Windows 11
+# set_colors 6
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}                              
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll
+${c1}  lllllllllllll  lllllllllllll

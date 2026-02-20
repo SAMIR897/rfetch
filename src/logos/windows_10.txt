@@ -1,0 +1,21 @@
+# Windows 8 / 10
+# set_colors 6
+${c1}                                ..,
+${c1}                    ....,,:;+ccllll
+${c1}      ...,,+:;  cllllllllllllllllll
+${c1}    ,cllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}                                   
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    llllllllll  lllllllllllllllllll
+${c1}    `'ccllllll  lllllllllllllllllll
+${c1}      `' \*::  :ccllllllllllllllll
+${c1}                       ````''*::cll
+${c1}                                 ``
