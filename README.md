@@ -178,6 +178,6 @@ MIT © [SAMIR897](https://github.com/SAMIR897)
 ---
 
 <div align="center">
-  <p>Built with 🦀 and ❤️</p>
+  <p>Built with 🦀 and 💜</p>
   <p>If you find rfetch useful, please consider giving it a ⭐ on GitHub!</p>
 </div>
