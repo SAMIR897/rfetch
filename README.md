@@ -119,6 +119,22 @@ rfetch --live
 | `--block` | High-fidelity block-art logos (coming soon) |
 
 ---
+## 🏗️ Project Structure
+
+```
+rfetch/
+├── src/
+│   ├── main.rs          # Entry point, rendering engine
+│   ├── logo.rs          # Logo database and color rendering
+│   ├── logos/            # 263+ ASCII art logo files
+│   └── info/            # System info modules
+├── install.sh           # One-line installer
+├── Cargo.toml           # Rust dependencies
+├── LICENSE              # MIT License
+└── CONTRIBUTING.md      # Contribution guide
+```
+
+---
 
 
 
