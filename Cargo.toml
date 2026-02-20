@@ -7,3 +7,5 @@ edition = "2024"
 sysinfo = "0.30"
 colored = "2.1"
 crossterm = "0.27"
+ureq = { version = "2.10", features = ["json"] }
+regex = "1.12.3"

@@ -16,6 +16,8 @@ pub mod disk;
 pub mod users;
 pub mod media;
 pub mod colors;
+pub mod ip;
+pub mod net_speed;
 
 use colored::*;
 
@@ -113,6 +115,19 @@ pub fn collect_all() -> Vec<String> {
 
     // Local IP
     lines.push(format!("{}: {}", "Local IP".cyan().bold(), network::get_local_ip()));
+
+    // Global IP (Optional, can be slow - maybe flagged later? For now we just add it)
+    // To avoid slowing down default run, we might want to skip this or make it fast.
+    // For now, let's include it as requested.
+    let global_ip = ip::get_global_ip();
+    if !global_ip.is_empty() && global_ip != "Unknown" {
+        lines.push(format!("{}: {}", "Global IP".cyan().bold(), global_ip));
+    }
+
+    // Network Speed
+    // Note: This adds 1s delay due to sleep! We might want to only do this if a flag is passed.
+    // But user asked for it. Let's add it.
+    lines.push(format!("{}: {}", "Net Speed".cyan().bold(), net_speed::get_network_speed()));
 
     // Users
     lines.push(format!("{}: {}", "Users".cyan().bold(), users::get_users()));
