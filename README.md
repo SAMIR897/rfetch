@@ -120,38 +120,7 @@ rfetch --live
 
 ---
 
-## 🏗️ Project Structure
 
-```
-rfetch/
-├── src/
-│   ├── main.rs          # Entry point, rendering engine
-│   ├── logo.rs          # Logo database and color rendering
-│   ├── logos/            # 263+ ASCII art logo files
-│   │   ├── arch.txt
-│   │   ├── ubuntu.txt
-│   │   ├── darwin.txt
-│   │   ├── windows.txt
-│   │   ├── windows_10.txt
-│   │   ├── windows_11.txt
-│   │   └── ...
-│   └── info/            # System info modules
-│       ├── os.rs        # OS detection
-│       ├── cpu.rs       # CPU information
-│       ├── gpu.rs       # GPU + driver info
-│       ├── memory.rs    # RAM usage
-│       ├── battery.rs   # Battery status
-│       ├── network.rs   # Local IP
-│       ├── ip.rs        # Global IP
-│       ├── net_speed.rs # Network speed
-│       └── ...          # 20+ more modules
-├── install.sh           # One-line installer
-├── Cargo.toml           # Rust dependencies
-├── LICENSE              # MIT License
-└── CONTRIBUTING.md      # Contribution guide
-```
-
----
 
 ## 🤝 Contributing
 
