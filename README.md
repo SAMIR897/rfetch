@@ -126,14 +126,7 @@ rfetch/
 ├── src/
 │   ├── main.rs          # Entry point, rendering engine
 │   ├── logo.rs          # Logo database and color rendering
-│   ├── logos/            # 263+ ASCII art logo files
-│   │   ├── arch.txt
-│   │   ├── ubuntu.txt
-│   │   ├── darwin.txt
-│   │   ├── windows.txt
-│   │   ├── windows_10.txt
-│   │   ├── windows_11.txt
-│   │   └── ...
+│   ├── logos/           # 263+ ASCII art logo files
 │   └── info/            # System info modules
 ├── install.sh           # One-line installer
 ├── Cargo.toml           # Rust dependencies
