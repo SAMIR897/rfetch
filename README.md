@@ -143,24 +143,37 @@ rfetch/
 
 ## 📦 Changelog
 
-### v1.0.2 — *Windows Logo Update*
-- Added version-specific Windows logos (Windows 7, 8/10, and 11)
-- Live mode with in-place terminal updates (`--live`)
-- Net Speed monitoring (upload/download)
-- Layout alignment fixes (ANSI strip)
-- Professional README overhaul
+### v1.0.2 — *Windows Logo Update & Live Mode*
+- **Windows Logos 🪟**: Added version-specific ascii logos for Windows 7, 8/10, and 11.
+- **Live Mode 📺**: Added `--live` flag for real-time system monitoring with in-place terminal updates.
+- **Net Speed**: Added network upload/download speed monitoring.
+- **Alignments**: Fixed layout alignment by stripping ANSI characters during padding calculation.
+- **Docs**: Comprehensive README overhaul.
 
-### v1.0.1 — *Documentation & Polish*
-- Polished README, CONTRIBUTING guide, and LICENSE
-- Cleaned up git history and build artifacts
-- Added CI/CD release workflow for cross-platform binaries
+### v1.0.1 — *The Cross-Platform Update (Windows + Optimization)* 🪟
+This release brings full Windows support to rfetch, making it a truly cross-platform system fetch tool. We've also performed a major cleanup of the repository, reducing clone size by 99%.
+
+#### 🌟 Features:
+- **Windows Support 🪟**: rfetch now runs natively on Windows!
+  - Added detection for `wmic`, `powershell`, and `cmd` to fetch specific Windows info.
+  - Supports package counts for winget, choco, and scoop.
+  - Correctly detects GPU, Resolution, and Memory on Windows 10/11.
+- **Repository Optimization 📉**:
+  - Used `git filter-branch` to remove accidental build artifacts from history.
+  - Repo size reduced from 31MB to 272KB.
+  - Clone time is now near-instant (<1s).
+  - Optimized release binary is 967KB (static).
+
+#### 🔧 Fixes:
+- Fixed GPU detection fallback on MacOS.
+- Unified `cargo build` process for all platforms.
 
 ### v1.0.0 — *Initial Release*
-- 261+ distro logos (full Neofetch parity)
-- 28+ system info fields (OS, CPU, GPU, Memory, Disk, Battery, etc.)
-- Cross-platform support (Linux, macOS, Windows)
-- One-line installer script
-- Single static binary with zero dependencies
+- **Logos**: 261+ distro logos (full Neofetch parity).
+- **Info**: 28+ system info fields (OS, CPU, GPU, Memory, Disk, Battery, etc.).
+- **Platform**: Cross-platform support (Linux, macOS).
+- **Setup**: One-line installer script.
+- **Binary**: Single static binary with zero dependencies.
 
 ---
 
