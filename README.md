@@ -164,8 +164,6 @@ rfetch/
 
 ---
 
-
-
 ## 🤝 Contributing
 
 We'd love your help making rfetch the #1 fetch tool! Whether it's adding a missing distro logo, fixing a bug, or improving performance — all contributions are welcome.
