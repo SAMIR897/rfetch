@@ -126,13 +126,41 @@ rfetch/
 ├── src/
 │   ├── main.rs          # Entry point, rendering engine
 │   ├── logo.rs          # Logo database and color rendering
-│   ├── logos/           # 263+ ASCII art logo files
+│   ├── logos/            # 263+ ASCII art logo files
+│   │   ├── arch.txt
+│   │   ├── ubuntu.txt
+│   │   ├── darwin.txt
+│   │   ├── windows.txt
+│   │   ├── windows_10.txt
+│   │   ├── windows_11.txt
+│   │   └── ...
 │   └── info/            # System info modules
 ├── install.sh           # One-line installer
 ├── Cargo.toml           # Rust dependencies
 ├── LICENSE              # MIT License
 └── CONTRIBUTING.md      # Contribution guide
 ```
+
+## 📦 Changelog
+
+### v1.0.2 — *Windows Logo Update*
+- Added version-specific Windows logos (Windows 7, 8/10, and 11)
+- Live mode with in-place terminal updates (`--live`)
+- Net Speed monitoring (upload/download)
+- Layout alignment fixes (ANSI strip)
+- Professional README overhaul
+
+### v1.0.1 — *Documentation & Polish*
+- Polished README, CONTRIBUTING guide, and LICENSE
+- Cleaned up git history and build artifacts
+- Added CI/CD release workflow for cross-platform binaries
+
+### v1.0.0 — *Initial Release*
+- 261+ distro logos (full Neofetch parity)
+- 28+ system info fields (OS, CPU, GPU, Memory, Disk, Battery, etc.)
+- Cross-platform support (Linux, macOS, Windows)
+- One-line installer script
+- Single static binary with zero dependencies
 
 ---
 
