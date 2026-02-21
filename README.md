@@ -148,7 +148,8 @@ rfetch/
 - **Fix** — GPU detection fallback on macOS
 
 ### [v1.0.0](https://github.com/SAMIR897/rfetch/releases/tag/v1.0.0) — *Initial Release*
-- 261+ Neofetch-parity logos, 28+ info fields, one-line installer, single static binary
+- **Core**: 261+ Neofetch-parity distro logos, 28+ system info fields (OS, CPU, GPU, Memory, Disk, Battery, Network)
+- **Distribution**: Single static binary, zero dependencies, one-line installer for Linux & macOS
 
 ---
 
