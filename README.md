@@ -26,6 +26,8 @@
 [Neofetch](https://github.com/dylanaraps/neofetch) is no longer maintained. [Fastfetch](https://github.com/fastfetch-cli/fastfetch) is great, but heavier.
 **rfetch** is the spiritual successor to Neofetch — written in pure Rust for instant startup times, zero external dependencies, and a single static binary.
 
+<div align="center">
+
 | Feature | Neofetch | Fastfetch | **rfetch** 🦀 |
 | :--- | :---: | :---: | :---: |
 | **Language** | Bash | C | **Rust** |
@@ -35,22 +37,19 @@
 | **Dependencies** | Bash, awk, etc. | CMake, libs | **Zero** |
 | **Config** | config.conf | JSON | **Zero-config defaults** |
 
+</div>
+
 ---
 
 ## ✨ Features
 
 ### System Information
 rfetch displays **28+ system info fields** out of the box:
-
-| Category | Fields |
-|---|---|
-| **System** | OS, Host, Kernel, Uptime |
-| **Software** | Packages, Shell, DE, WM, WM Theme, Theme, Icons |
-| **Display** | Resolution, Terminal, Terminal Font |
-| **Hardware** | CPU, GPU, GPU Driver, Memory, Disk, Battery |
-| **Network** | Local IP, Global IP, Network Speed |
-| **Users** | Logged-in users |
-| **Visual** | ANSI color bar |
+- **System**: OS, Host, Kernel, Uptime
+- **Hardware**: CPU, GPU, GPU Driver, Memory, Disk, Battery
+- **Software**: Packages, Shell, DE, WM, WM Theme, Theme, Icons
+- **Network**: Local IP, Global IP, Network Speed
+- **Display & UI**: Resolution, Terminal, Terminal Font, Users, ANSI color bar
 
 ### Highlights
 
@@ -103,35 +102,26 @@ rfetch --live
 ```
 
 ### Flags
-
-| Flag | Description |
-|---|---|
-| `--live` | Enable live mode with in-place terminal updates |
-| `--help` | Show help information |
+- `--live` — Real-time system monitoring with in-place updates.
+- `--help` — Show help information.
 
 ### Planned Flags
+- `--distro <name>` — Force a specific distro logo.
+- `--small` — Use smaller logo variant.
+- `--no-color` — Disable colored output.
+- *`--block`* — *(Coming soon) High-fidelity block-art logos.*
 
-| Flag | Description |
-|---|---|
-| `--distro <name>` | Force a specific distro logo |
-| `--small` | Use smaller logo variant |
-| `--no-color` | Disable colored output |
-| `--block` | High-fidelity block-art logos (coming soon) |
-
----
 ## 🏗️ Project Structure
-
-```
+```text
 rfetch/
 ├── src/
-│   ├── main.rs          # Entry point, rendering engine
-│   ├── logo.rs          # Logo database and color rendering
-│   ├── logos/           # 263+ ASCII art logo files
-│   └── info/            # System info modules
-├── install.sh           # One-line installer
-├── Cargo.toml           # Rust dependencies
-├── LICENSE              # MIT License
-└── CONTRIBUTING.md      # Contribution guide
+│   ├── main.rs      # Engine
+│   ├── logo.rs      # DB & Colors
+│   ├── logos/       # 263+ ASCII files
+│   └── info/        # Info modules
+├── install.sh       # Installer
+├── Cargo.toml       # Dependencies
+└── CONTRIBUTING.md  # Guide
 ```
 
 ## 📦 Changelog
@@ -148,7 +138,8 @@ rfetch/
 - **Fix** — GPU detection fallback on macOS
 
 ### [v1.0.0](https://github.com/SAMIR897/rfetch/releases/tag/v1.0.0) — *Initial Release*
-- 261+ Neofetch-parity logos, 28+ info fields, one-line installer, single static binary
+- **Core**: 261+ Neofetch-parity distro logos, 28+ system info fields (OS, CPU, GPU, Memory, Disk, Battery, Network)
+- **Distribution**: Single static binary, zero dependencies, one-line installer for Linux & macOS
 
 ---
 
