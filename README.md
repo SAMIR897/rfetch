@@ -72,7 +72,19 @@ curl -sSf https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.sh | sh
 
 This will automatically detect your OS and architecture, download the latest release, and install it to `/usr/local/bin`.
 
-### Windows
+### Quick Install (Windows)
+
+**PowerShell:**
+```powershell
+irm https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.ps1 | iex
+```
+
+**Command Prompt (cmd):**
+```cmd
+powershell -c "irm https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.ps1 | iex"
+```
+
+### Windows (Manual)
 
 1. Go to the [Releases Page](https://github.com/SAMIR897/rfetch/releases)
 2. Download `rfetch-windows-amd64.zip`
