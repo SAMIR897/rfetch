@@ -74,14 +74,16 @@ This will automatically detect your OS and architecture, download the latest rel
 
 ### Quick Install (Windows)
 
-**PowerShell:**
-```powershell
-irm https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.ps1 | iex
-```
+### Quick Install (Windows)
 
 **Command Prompt (cmd):**
 ```cmd
 powershell -c "irm https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.ps1 | iex"
+```
+
+**PowerShell:**
+```powershell
+irm https://raw.githubusercontent.com/SAMIR897/rfetch/main/install.ps1 | iex
 ```
 
 ### Windows (Manual)
