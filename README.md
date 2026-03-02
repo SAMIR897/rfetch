@@ -16,8 +16,16 @@
     <img src="https://img.shields.io/github/downloads/SAMIR897/rfetch/total?style=flat-square&color=green&label=downloads" alt="Downloads">
   </a>
   <br><br>
-  <img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot.png" alt="rfetch screenshot" width="800">
-  <img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot1.png" alt="rfetch screenshot" width="800">
+  <table>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot.png" alt="rfetch macOS" width="400"></td>
+      <td><img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot1.png" alt="rfetch Ubuntu" width="400"></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>macOS</strong></td>
+      <td align="center"><strong>Ubuntu</strong></td>
+    </tr>
+  </table>
 </div>
 
 ---
