@@ -1,5 +1,5 @@
 target/
 temp_repos/
-extract_logos.py
 .DS_Store
 git cloned/
+extract_logos.py
