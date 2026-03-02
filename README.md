@@ -17,7 +17,7 @@
   </a>
   <br><br>
   <img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot.png" alt="rfetch screenshot" width="800">
-  <img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot2.png" alt="rfetch screenshot" width="800">
+  <img src="https://raw.githubusercontent.com/SAMIR897/rfetch/main/assets/screenshot1.png" alt="rfetch screenshot" width="800">
 </div>
 
 ---
